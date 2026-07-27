@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animeverse | Bleach Fan Edition</title>
+    <style>
+        :root { --border: 1px solid #eee; --radius: 8px; --dark: #111; --grey: #999; }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 20px; font-family: 'Segoe UI', Arial, sans-serif; background: #fdfdfd; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; background: #fff; border: 1px solid #ddd; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: var(--radius); }
+        .header, nav, .section, .forms, .media-content, .btn-row { display: flex; justify-content: space-between; align-items: center; }
+        .header img { width: 60px; height: 85px; object-fit: contain; border-radius: 4px; }
+        .header h1 { color: var(--dark); font-size: 36px; margin-left: 15px; text-transform: uppercase; letter-spacing: 2px; }
+        nav { padding: 15px 0; margin: 20px 0; border-top: var(--border); border-bottom: var(--border); position: sticky; top: 0; background: #fff; z-index: 100; }
+        nav div { display: flex; gap: 30px; }
+        nav a { text-decoration: none; color: #555; font-weight: 600; font-size: 13px; text-transform: uppercase; }
+        nav a:hover { color: #000; }
+        .search { padding: 8px 12px; width: 220px; border: 1px solid #ddd; border-radius: 4px; }
+        .section, .forms { align-items: flex-start; margin-top: 30px; gap: 40px; }
+        .left { width: 40%; }
+        .right { width: 55%; text-align: center; background: #f9f9f9; border-radius: var(--radius); padding: 25px; border: var(--border); }
+        progress { width: 100%; height: 12px; margin-bottom: 20px; border-radius: 6px; }
+        form { width: 48%; }
+        fieldset { padding: 25px; border: var(--border); border-radius: var(--radius); background: #fafafa; }
+        legend { font-weight: bold; padding: 0 10px; text-transform: uppercase; font-size: 12px; color: #666; }
+        label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; text-transform: uppercase; }
+        input, textarea, select { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .btn { padding: 12px 24px; cursor: pointer; font-weight: bold; text-transform: uppercase; border-radius: 4px; border: none; }
+        .btn-primary { background: var(--dark); color: #fff; }
+        .btn-secondary { background: #fff; color: #333; border: 1px solid #ddd; font-size: 12px; }
+        .media { margin-top: 50px; padding: 40px; background: #fcfcfc; border-radius: var(--radius); border: var(--border); }
+        .media h2 { font-size: 24px; text-transform: uppercase; margin-bottom: 40px; text-align: center; }
+        .media-content { align-items: flex-start; gap: 30px; margin-bottom: 40px; }
+        .media-item { flex: 1; width: 100%; }
+        .video-box { width: 100%; border-radius: var(--radius); background: #000; margin-bottom: 15px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .video-box video { width: 100%; display: block; }
+        .pdf-viewer { width: 100%; height: 450px; border: var(--border); border-radius: var(--radius); }
+        .map-box { width: 100%; max-width: 700px; height: 350px; margin: 0 auto; border-radius: var(--radius); overflow: hidden; border: var(--border); }
+        .opt-group { display: flex; flex-wrap: wrap; gap: 15px; padding: 5px 0; }
+        .opt-group label { display: flex; align-items: center; gap: 8px; text-transform: none; font-weight: normal; font-size: 14px; }
+        .opt-group input { width: auto; margin: 0; }
+        .footer { text-align: center; margin-top: 50px; padding: 30px 0; border-top: var(--border); color: var(--grey); font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header" id="home">
+            <div style="display: flex; align-items: center;">
+                <img src="TYBW.jpg" alt="Bleach Logo">
+                <h1>Animeverse</h1>
+            </div>
+            <p style="font-size: 12px; color: var(--grey);">Bleach: TYBW Fan Site</p>
+        </header>
+
+        <nav>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#join">Join Club</a>
+                <a href="#media">Media</a>
+            </div>
+            <form style="width: auto; margin: 0;" action="#" method="get">
+                <input class="search" type="search" placeholder="Search Anime...">
+            </form>
+        </nav>
+
+        <div class="section">
+            <div class="left">
+                <h3 style="margin-top: 0; text-transform: uppercase;">Character Stats</h3>
+                <label>Reiatsu</label><progress value="98" max="100"></progress>
+                <label>Zanjutsu</label><progress value="92" max="100"></progress>
+                <label>Shunpo</label><progress value="95" max="100"></progress>
+                <label>Endurance</label><progress value="88" max="100"></progress>
+            </div>
+            <div class="right">
+                <h4 style="margin: 0; text-transform: uppercase;">Bankai Activation</h4>
+                <p style="font-size: 14px; color: #666; margin-bottom: 20px;">Listen to the power of the Zanpakuto</p>
+                <audio controls style="width: 100%;">
+                    <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663462076132/SJNXYhMUaOIUwTpG.mpeg" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <div class="forms" id="join">
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Member Registration</legend>
+                    <label>Username</label><input type="text" placeholder="Soul name" required>
+                    <label>Password</label><input type="password" required>
+                    <label>Email</label><input type="email" required>
+                    <label>Age</label><input type="number" min="10" max="99">
+                    <label>Favorite Character</label>
+                    <select>
+                        <option>Ichigo Kurosaki</option><option>Kisuke Urahara</option><option>Sosuke Aizen</option><option>Kenpachi Zaraki</option><option>Byakuya Kuchiki</option>
+                    </select>
+                    <label>Affiliation</label>
+                    <div class="opt-group">
+                        <label><input type="radio" name="side"> Shinigami</label>
+                        <label><input type="radio" name="side"> Quincy</label>
+                        <label><input type="radio" name="side"> Hollow</label>
+                    </div>
+                    <div class="btn-row" style="margin-top: 20px;">
+                        <input type="submit" value="Register" class="btn btn-primary">
+                        <input type="reset" value="Clear" class="btn btn-secondary">
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Episode Review</legend>
+                    <label>Episode Name</label><input type="text" required>
+                    <label>Hype Level</label><input type="range" min="1" max="10" value="7">
+                    <label>Your Thoughts</label><textarea rows="5" placeholder="Battle thoughts..."></textarea>
+                    <label>Interests</label>
+                    <div class="opt-group">
+                        <label><input type="checkbox"> Combat</label><label><input type="checkbox"> Lore</label>
+                        <label><input type="checkbox"> Art</label><label><input type="checkbox"> Cosplay</label>
+                    </div>
+                    <div class="btn-row" style="margin-top: 20px;">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                        <button type="button" class="btn btn-secondary">Preview</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="media" id="media">
+            <h2>Featured Media</h2>
+            <div class="media-content">
+                <div class="media-item">
+                    <label style="margin-bottom: 15px; display: block; text-align: center;">Official Fan Guide (PDF)</label>
+                    <iframe src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663462076132/dRxigqzXYZkVjmqi.pdf" class="pdf-viewer"></iframe>
+                    <p style="font-size: 12px; text-align: center; margin-top: 10px;"><a href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663462076132/dRxigqzXYZkVjmqi.pdf" target="_blank">Download Guide</a></p>
+                </div>
+                <div class="media-item">
+                    <label style="margin-bottom: 15px; display: block; text-align: center;">Official Trailer</label>
+                    <div class="video-box">
+                        <video controls preload="metadata"><source src="bleach_trailer.mp4" type="video/mp4"></video>
+                    </div>
+                    <p style="font-size: 12px; text-align: center; color: #666;">Bleach: Thousand-Year Blood War</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <label style="margin-bottom: 15px; display: block;">Studio Pierrot HQ - Tokyo</label>
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0!2d139.5661!3d35.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f7a0c0e0e0e1%3A0x0!2sStudio+Pierrot!5e0!3m2!1sen!2sjp!4v1" width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Animeverse &copy; 2026 | Refined Fan Experience | Built for the Gotei 13.</p>
+        </footer>
+    </div>
+</body>
+</html>
